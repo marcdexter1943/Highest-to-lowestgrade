@@ -1,0 +1,30 @@
+english= int(input("Enter grade in English:"))
+math= int(input("Enter grade in Math:"))
+science= int(input("Enter grade in Science:"))
+
+if(english > math) and (english > science):
+    print("English is highest grade: ",english)
+    if(math > science):
+        print("Math is second: ",math)
+        print("Science is third: ",science)
+    elif(science > math):
+        print("Science is second: ",science)
+        print("Math is third: ",math)
+
+if(math > english) and (math > science):
+    print("Math is highest grade: ",math)
+    if(english > science):
+        print("English is second: ",english)
+        print("Science is third: ",science)
+    elif(science > english):
+        print("Science is second: ",science)
+        print("English is third: ",english)
+
+if(science > english) and (science > math):
+    print("Science is highest grade: ",science)
+    if(english > math):
+        print("English is second: ",english)
+        print("Math is third: ",math)
+    elif(math > english):
+        print("Math is second: ",math)
+        print("English is third: ",english)
